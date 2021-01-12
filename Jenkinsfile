@@ -23,7 +23,7 @@ pipeline {
 							orchestratorAddress: 'https://cloud.uipath.com/', 
 							orchestratorTenant: 'DefaultTenant', 
 							outputPath: '${WORKSPACE}\\Output', 
-							projectJsonPath: '${WORKSPACE}', 
+							projectJsonPath: 'project.json', 
 							useOrchestrator: true, 
 							version: AutoVersion()
 						  )
