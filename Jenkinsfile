@@ -22,7 +22,7 @@ pipeline {
 					UiPathPack( credentials: Token(accountName: 'kanerpsmiups', credentialsId: '3f48592b-8043-4600-8702-70c4bcd8ed29'), 
 							orchestratorAddress: 'https://cloud.uipath.com/', 
 							orchestratorTenant: 'DefaultTenant', 
-							outputPath: '${WORKSPACE}\\Output', 
+							outputPath: '${WORKSPACE}\\Outputa', 
 							projectJsonPath: 'project.json', 
 							useOrchestrator: true, 
 							version: AutoVersion()
