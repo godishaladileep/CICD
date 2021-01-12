@@ -10,7 +10,7 @@ pipeline {
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
 	        UIPATH_ORCH_LOGICAL_NAME = "kanerpsmiups"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
-	        UIPATH_ORCH_FOLDER_NAME = "Shared"
+	        UIPATH_ORCH_FOLDER_NAME = "Default"
 	    	}
 	
 	    stages {
@@ -23,7 +23,7 @@ pipeline {
 							orchestratorAddress: 'https://cloud.uipath.com/', 
 							orchestratorTenant: 'DefaultTenant', 
 							outputPath: '${WORKSPACE}\\Output', 
-							projectJsonPath: '${WORKSPACE}\\project.json', 
+							projectJsonPath: '${WORKSPACE}', 
 							useOrchestrator: true, 
 							version: AutoVersion()
 						  )
